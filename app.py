@@ -71,7 +71,7 @@ def detect_and_predict_mask(frame, faceNet, maskNet):
 	return (locs, preds)
 
 # load our serialized face detector model from disk
-prototxtPath = "face_detector\\deploy.prototxt"
+prototxtPath = "face_detector\\deploy.prototxt.txt"
 weightsPath = "face_detector\\res10_300x300_ssd_iter_140000.caffemodel"
 faceNet = cv2.dnn.readNet(prototxtPath, weightsPath)
 
